@@ -53,20 +53,21 @@ nav a {
 }
 nav a:hover {
   color: var(--red);
-  transition: color .4s ease-in;
+  transition: color .2s ease-in;
 }
+
 .icon-wrapper {
   width:50px;
 }
 main {
   display: flex;
   flex-direction: column;
-  width: 60%;
   margin-left: 40px;
   margin-top: 65px;
 }
 .intro {
   line-height: 1.8;
+  width: 60%;
 }
 .intro h2 {
   font-size: 50px;
@@ -76,7 +77,7 @@ main {
   font-size: 40px;
 }
 .intro p {
-  font-size: 20px;
+  font-size: 21px;
   margin-bottom: 20px;
 }
 .special {
@@ -91,4 +92,41 @@ main {
   font-size: 20px;
   font-weight: bold;
   border-radius: 10px;
+  border: none;
+}
+.project-button:hover {
+  background-color: var(--grey);
+  transition: background-color .2s ease-in;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.about-left {
+  margin: 15px;
+  padding: 10px;
+}
+.avatar {
+  border-radius: 50%;
+}
+.about-right {
+  width: 60%;
+  padding: 20px;
+  border: 1px solid black;
+  margin-left: 10px;
+}
+.about-right p {
+  font-size: 21px;
+}
+.about-right a {
+  color: var(--red);
+  font-weight: bold;
+  text-decoration: none;
+}
+.about-right a:hover {
+  color: var(--grey);
+  transition: color .2s ease-in;
 }
