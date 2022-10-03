@@ -60,20 +60,35 @@ nav a:hover {
 }
 main {
   display: flex;
-}
-.intro {
+  flex-direction: column;
   width: 60%;
   margin-left: 40px;
   margin-top: 65px;
+}
+.intro {
   line-height: 1.8;
+}
+.intro h2 {
+  font-size: 50px;
 }
 .intro h3 {
   margin-bottom: 20px;
+  font-size: 40px;
 }
 .intro p {
   font-size: 20px;
+  margin-bottom: 20px;
 }
 .special {
   color: var(--red);
   font-weight: bold;
+}
+
+.project-button {
+  background-color: var(--red);
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
 }
