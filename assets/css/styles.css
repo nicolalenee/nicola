@@ -108,6 +108,8 @@ main {
 .about-left {
   margin: 15px;
   padding: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 .avatar {
   border-radius: 50%;
@@ -115,7 +117,6 @@ main {
 .about-right {
   width: 60%;
   padding: 20px;
-  border: 1px solid black;
   margin-left: 10px;
 }
 .about-right p {
