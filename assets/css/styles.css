@@ -4,9 +4,14 @@
   padding: 0;
   font-family: 'Nanum Gothic Coding', monospace;
 }
+:root {
+  --red: #E41D1D;
+  --grey: #545454;
+}
 html, body {
   height: 100%;
   width: 100%;
+  padding-top: 65px;
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -14,9 +19,12 @@ img, picture, video, canvas, svg {
 }
 header {
   position: fixed;
+  left:0;
+  right:0;
+  top:0;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-content: bottom;
   top: 15px;
   width:90%;
 }
@@ -26,7 +34,7 @@ header {
 }
 .logo-text {
   font-size: 35px;
-  color: #545454;
+  color: var(--grey);
   font-family: 'Nanum Gothic Coding', monospace;
   font-weight: bold;
 }
@@ -40,13 +48,32 @@ header ul li {
 }
 nav a {
   text-decoration: none;
-  color: #545454;
+  color: var(--grey);
   font-size: 20px;
 }
 nav a:hover {
-  color: #E41D1D;
+  color: var(--red);
   transition: color .4s ease-in;
 }
 .icon-wrapper {
   width:50px;
+}
+main {
+  display: flex;
+}
+.intro {
+  width: 60%;
+  margin-left: 40px;
+  margin-top: 65px;
+  line-height: 1.8;
+}
+.intro h3 {
+  margin-bottom: 20px;
+}
+.intro p {
+  font-size: 20px;
+}
+.special {
+  color: var(--red);
+  font-weight: bold;
 }
