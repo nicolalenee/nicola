@@ -54,21 +54,27 @@
         <div class="card" style="width: 25rem;">
           <img src="./assets/images/pizzahunt.png" class="card-img-top" alt="pizza hunt website" style="height: 200px;">
           <div class="card-body">
-            <p>Pizza Hunt</p>
+            <a href="#one" class="modal-button">
+              Pizza Hunt
+            </a>
           </div>
         </div>
          <!--card #2-->
          <div class="card" style="width: 25rem;">
           <img src="./assets/images/tech-blog.png" class="card-img-top" alt="tech blog website" style="height: 200px;">
           <div class="card-body">
-            <p>Techblog</p>
+            <a href="#two" class="modal-button">
+              Tech Blog
+            </a>
           </div>
         </div>
         <!--card #3-->
         <div class="card" style="width: 25rem;">
           <img src="./assets/images/zookeepr.png" class="card-img-top" alt="zookeeper website" style="height: 200px;">
           <div class="card-body">
-           <p>Zoo Keepr</p>
+            <a href="#three" class="modal-button">
+              Zoo Keepr
+            </a>
           </div>
         </div>
   
@@ -76,21 +82,102 @@
 
       <!--modal elements-->
       <div id="modal" class="modal">
+        <!--modal  #1 -->
         <div class="modal-content" id="one">
           <span class="close">&times;</span>
           <div class="modal-body">
-            <div class="modal-left">
 
+            <div class="modal-left">
+              <img src="./assets/images/pizzahunt.png" alt="Pizza Hunt" class="modal-image">
+            </div>
+
+            <div class="modal-right">
+              <div class="modal-header">
+                <h3 class="title">Pizza Hunt</h3>
+              </div>
+              <div class="modal-description">
+                <p class="modal-text">
+                  A blogging site to track the best pizzas, pizza locations, and pizza opinions. Users have the ability to create a new pizza and comment on these pizzas. Users can also start a saucy conversation by replying to comments.
+                </p>
+                <p class="modal-text tech">
+                  Javascript, Express, Node.JS, MongoDB
+                </p>
+              </div>
+              <div class="modal-info">
+                <button class="deployment-button"><a href="https://vast-garden-75186.herokuapp.com/">View Website</a></button>
+                <a href="https://github.com/nicolalenee/PizzaHunt" class="repo-link">View Repository</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- end of modal # 1-->
+
+
+        <!--modal  #2 -->
+      <div class="modal-content" id="two">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <div class="modal-left">
+            <img src="./assets/images/tech-blog.png" alt="Tech Blog" class="modal-image">
+          </div>
+          <div class="modal-right">
+            <div class="modal-header">
+              <h3 class="title">Tech Blog</h3>
+            </div>
+            <div class="modal-description">
+              <p class="modal-text">
+                A web application that allows users to sign up , login, and create posts and comments for tech related news
+              <p class="modal-text tech">JavaScript, Express, Node.Js, MongdoDB
+            </div>
+            <div class="modal-info">
+              <button class="deployment-button"><a href="http://nicola-tech-blog.herokuapp.com/">View Website</a></button>
+              <a href="https://github.com/nicolalenee/tech-blog" class="repo-link">View Repository</a>
             </div>
 
           </div>
         </div>
       </div>
+      <!--end of modal #2 -->
+
+      <!-- modal  #3 -->
+      <div class="modal-content" id="three">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <div class="modal-left">
+        
+            <img src="./assets/images/zookeepr.png" alt="Zookeepr" class="modal-image">
+          </div>
+          <div class="modal-right">
+            <div class="modal-header">
+              <h3 class="title">Zookeepr</h3>
+            </div>
+            <div class="modal-description">
+              <p class="modal-text">
+                A web application that allows users to manage their zoo animals, zookeepers, and all of the interesting things that come along with them!
+              <p class="modal-text tech">HTML, CSS, JavaScript, REST API, Express.js
+            </div>
+            <div class="modal-info">
+              <button class="deployment-button"><a href="https://cola-zookeepr.herokuapp.com/">View Website</a></button>
+              <a href="https://github.com/nicolalenee/zookeepr" class="repo-link">View Repository</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--end of modal #3-->
+
+
+      </div>
     </section>
     
   </main>
 
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/modal.js"></script>
 </body>
 </html>
