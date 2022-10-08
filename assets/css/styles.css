@@ -115,9 +115,10 @@ main {
   border-radius: 50%;
 }
 .about-right {
-  width: 60%;
+  width: 80%;
   padding: 20px;
   margin-left: 10px;
+  border: 1px solid black;
 }
 .about-right p {
   font-size: 21px;
@@ -130,4 +131,46 @@ main {
 .about-right a:hover {
   color: var(--grey);
   transition: color .2s ease-in;
+}
+.currently-reading {
+  padding: 10px;
+  background-color: rgba(228, 29, 29, 0.9);
+  color: white;
+}
+.book {
+  font-style: italic;
+  color: rgb(69, 39, 69);
+}
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.top h2 {
+  font-size: 50px;
+  color: var(--red);
+  font-weight: bold;
+}
+.top p {
+  font-size: 21px;
+}
+.projects-wrapper {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+.card {
+  margin: 10px;
+  text-align: center;
+  font-size: 21px;
+}
+.card p {
+  font-weight: bold;
 }
