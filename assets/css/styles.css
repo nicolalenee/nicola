@@ -12,6 +12,7 @@ html, body {
   height: 100%;
   width: 100%;
   padding-top: 65px;
+  margin-bottom: 35px;
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -24,9 +25,12 @@ header {
   top:0;
   display: flex;
   justify-content: space-between;
-  align-content: bottom;
-  top: 15px;
-  width:90%;
+  align-items: center;
+  width:100%;
+  z-index: 999;
+  padding-top: 10px;
+  background-color: rgba(205, 205, 205, 0.95);
+  position: fixed;
 }
 .header-left {
   display: flex;
@@ -42,13 +46,14 @@ header ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  z-index: 999;
 }
 header ul li {
   margin: 25px;
 }
 nav a {
   text-decoration: none;
-  color: var(--grey);
+  color: white;
   font-size: 20px;
 }
 nav a:hover {
@@ -219,17 +224,20 @@ main {
   justify-content: space-between;
 }
 .modal-image {
+  max-width: 400px;
+}
+.modal-image img {
   width: 100%;
-  height: 300px;
 }
 .modal-left {
-  width: 70%;
   margin-right: 10px;
+  width: 65%;
 }
 .modal-right {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  align-content: center;
 }
 .modal-text {
   text-align: left;
@@ -241,6 +249,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 .tech { 
   background-color: var(--red);
