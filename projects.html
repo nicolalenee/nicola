@@ -54,27 +54,27 @@
         <div class="card" style="width: 25rem;">
           <img src="./assets/images/pizzahunt.png" class="card-img-top" alt="pizza hunt website" style="height: 200px;">
           <div class="card-body">
-            <a href="#one" class="modal-button">
+            <button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
               Pizza Hunt
-            </a>
+            </button>
           </div>
         </div>
          <!--card #2-->
          <div class="card" style="width: 25rem;">
           <img src="./assets/images/tech-blog.png" class="card-img-top" alt="tech blog website" style="height: 200px;">
           <div class="card-body">
-            <a href="#two" class="modal-button">
+            <button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
               Tech Blog
-            </a>
+            </button>
           </div>
         </div>
         <!--card #3-->
         <div class="card" style="width: 25rem;">
           <img src="./assets/images/zookeepr.png" class="card-img-top" alt="zookeeper website" style="height: 200px;">
           <div class="card-body">
-            <a href="#three" class="modal-button">
+            <button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
               Zoo Keepr
-            </a>
+            </button>
           </div>
         </div>
 
@@ -82,9 +82,9 @@
         <div class="card" style="width: 25rem;">
           <img src="./assets/images/photo-port.png" class="card-img-top" alt="zookeeper website" style="height: 200px;">
           <div class="card-body">
-            <a href="#four" class="modal-button">
+            <button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
               Photo Port
-            </a>
+            </button>
           </div>
         </div>
 
@@ -92,9 +92,9 @@
         <div class="card" style="width: 25rem;">
           <img src="./assets/images/just-tech-news.png" class="card-img-top" alt="just tech news website" style="height: 200px;">
           <div class="card-body">
-            <a href="#five" class="modal-button">
+            <button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
               Just Tech News
-            </a>
+            </button>
           </div>
         </div>
 
@@ -102,203 +102,226 @@
         <div class="card" style="width: 25rem;">
           <img src="./assets/images/deep-thoughts.png" class="card-img-top" alt="deep thoughts website" style="height: 200px;">
           <div class="card-body">
-            <a href="#six" class="modal-button">
+            <button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
               Deep Thoughts
-            </a>
+            </button>
           </div>
         </div>
   
       </section>
 
       <!--modal elements-->
-      <div id="modal" class="modal">
+      <div id="modal-zone" class="modal-zone">
         <!--modal  #1 -->
-        <div class="modal-content" id="one">
-          <span class="close">&times;</span>
-          <div class="modal-body">
-
-            <div class="modal-left">
-              <img src="./assets/images/pizzahunt.png" alt="Pizza Hunt" class="modal-image">
-            </div>
-
-            <div class="modal-right">
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
               <div class="modal-header">
-                <h3 class="title">Pizza Hunt</h3>
+                <h5 class="modal-title" id="staticBackdropLabel">Pizza Hunt</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-description">
-                <p class="modal-text">
-                  A blogging site to track the best pizzas, pizza locations, and pizza opinions. Users have the ability to create a new pizza and comment on these pizzas. Users can also start a saucy conversation by replying to comments.
-                </p>
-                <p class="modal-text tech">
-                  Javascript, Express, Node.JS, MongoDB
-                </p>
+              <div class="modal-body">
+                <img src="/assets/images/pizzahunt.png" alt="Pizza Hunt"/>
+                <div class="modal-description">
+                  <p class="modal-text tech text-white">
+                    Javascript, Express, Node.JS, MongoDB
+                  </p>
+                  <p class="modal-text">
+                    A blogging site to track the best pizzas, pizza locations, and pizza opinions. Users have the ability to create a new pizza and comment on these pizzas. Users can also start a saucy conversation by replying to comments.
+                  </p>
+                  
+                </div>
+                <div class="modal-info">
+                  <a href="https://github.com/nicolalenee/PizzaHunt" class="repo-link">Repository</a>
+                </div>
               </div>
-              <div class="modal-info">
-                <button class="deployment-button"><a href="https://vast-garden-75186.herokuapp.com/">View Website</a></button>
-                <a href="https://github.com/nicolalenee/PizzaHunt" class="repo-link">View Repository</a>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger text-white"><a href="https://vast-garden-75186.herokuapp.com/" class="text-white text-decoration-none">Visit Website</a></button>
               </div>
             </div>
-
           </div>
         </div>
-        <!-- end of modal # 1-->
+        <!-- end of modal 1-->
 
 
         <!--modal  #2 -->
-      <div class="modal-content" id="two">
-        <span class="close">&times;</span>
-        <div class="modal-body">
-          <div class="modal-left">
-            <img src="./assets/images/tech-blog.png" alt="Tech Blog" class="modal-image">
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Tech Blog</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="/assets/images/tech-blog.png" alt="Tech Blog"/>
+                <div class="modal-description">
+                  <p class="modal-text tech text-white">JavaScript, Express, Node.Js, MongdoDB</p>
+                  <p class="modal-text">
+                    A web application that allows users to sign up , login, and create posts and comments for tech related news</p>
+                  
+                </div>
+                <div class="modal-info">
+                  <a href="https://github.com/nicolalenee/tech-blog" class="repo-link">Repository</a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger text-white"><a href="http://nicola-tech-blog.herokuapp.com/" class="text-white text-decoration-none">Visit Website</a></button>
+              </div>
+            </div>
           </div>
-          <div class="modal-right">
-            <div class="modal-header">
-              <h3 class="title">Tech Blog</h3>
-            </div>
-            <div class="modal-description">
-              <p class="modal-text">
-                A web application that allows users to sign up , login, and create posts and comments for tech related news
-              <p class="modal-text tech">JavaScript, Express, Node.Js, MongdoDB
-            </div>
-            <div class="modal-info">
-              <button class="deployment-button"><a href="http://nicola-tech-blog.herokuapp.com/">View Website</a></button>
-              <a href="https://github.com/nicolalenee/tech-blog" class="repo-link">View Repository</a>
-            </div>
+        </div>
 
+      <!--modal  #3 -->
+      <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Zookeepr</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="/assets/images/zookeepr.png" alt="Tech Blog"/>
+              <div class="modal-description">
+                <p class="modal-text">
+                  A web application that allows users to manage their zoo animals, zookeepers, and all of the interesting things that come along with them!</p>
+                <p class="modal-text tech text-white">HTML, CSS, JavaScript, REST API, Express.js, Node.Js</p>
+                
+              </div>
+              <div class="modal-info">
+                <a href="https://github.com/nicolalenee/zookeepr" class="repo-link">Repository</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger text-white"><a href="https://cola-zookeepr.herokuapp.com/" class="text-white text-decoration-none">Visit Website</a></button>
+            </div>
           </div>
         </div>
       </div>
-      <!--end of modal #2 -->
+      <!--end of modal 3-->  
 
-      <!-- modal  #3 -->
-      <div class="modal-content" id="three">
-        <span class="close">&times;</span>
-        <div class="modal-body">
-          <div class="modal-left">
-        
-            <img src="./assets/images/zookeepr.png" alt="Zookeepr" class="modal-image">
-          </div>
-          <div class="modal-right">
+      <!--modal  #4 -->
+      <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
             <div class="modal-header">
-              <h3 class="title">Zookeepr</h3>
+              <h5 class="modal-title" id="staticBackdropLabel">Photo Port</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-description">
-              <p class="modal-text">
-                A web application that allows users to manage their zoo animals, zookeepers, and all of the interesting things that come along with them!
-              <p class="modal-text tech">HTML, CSS, JavaScript, REST API, Express.js, Node.Js
-            </div>
-            <div class="modal-info">
-              <button class="deployment-button"><a href="https://cola-zookeepr.herokuapp.com/">View Website</a></button>
-              <a href="https://github.com/nicolalenee/zookeepr" class="repo-link">View Repository</a>
-            </div>
+            <div class="modal-body">
+              <img src="/assets/images/photo-port.png" alt="Photo Port"/>
+              <div class="modal-description">
+                <p class="modal-text tech text-white">HTML, CSS, JavaScript, Express.js, React </p>
 
+                <p class="modal-text">
+                  A sample online photography portfolio. With the use of React components and interactive modals, viewing images</p>
+              
+                
+              </div>
+              <div class="modal-info">
+                <a href="https://github.com/nicolalenee/photo-port" class="repo-link">Repository</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger text-white"><a href="https://photo-port.vercel.app/" class="text-white text-decoration-none">Visit Website</a></button>
+            </div>
           </div>
         </div>
       </div>
-      <!--end of modal #3-->
-
-      <!-- modal  #4 -->
-      <div class="modal-content" id="four">
-        <span class="close">&times;</span>
-        <div class="modal-body">
-          <div class="modal-left">
-        
-            <img src="./assets/images/photo-port.png" alt="Photo Port" class="modal-image">
-          </div>
-          <div class="modal-right">
-            <div class="modal-header">
-              <h3 class="title">Photo Port</h3>
-            </div>
-            <div class="modal-description">
-              <p class="modal-text">
-                Built using React components, this simple and interactive sample portfoliio allows visitors to click through images and expand the images in a modal.
-              <p class="modal-text tech">HTML, CSS, JavaScript, React, Node.Js
-            </div>
-            <div class="modal-info">
-              <button class="deployment-button"><a href="https://photo-port.vercel.app/">View Website</a></button>
-              <a href="https://github.com/nicolalenee/photo-port" class="repo-link">View Repository</a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!--end of modal #4-->
+<!--end of modal 4-->  
 
       <!-- modal  5 -->
-      <div class="modal-content" id="five">
-        <span class="close">&times;</span>
-        <div class="modal-body">
-          <div class="modal-left">
-        
-            <img src="./assets/images/just-tech-news.png" alt="Just Tech News" class="modal-image">
-          </div>
-          <div class="modal-right">
+      <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
             <div class="modal-header">
-              <h3 class="title">Just Tech News</h3>
+              <h5 class="modal-title" id="staticBackdropLabel">Just Tech News</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-description">
-              <p class="modal-text">
-                This nostalgic discussion board allows users to post links to articles about the latest technological advancements. Users can login and logout as well as comment and upvote posts. Editing and deleting posts is made easy with a personal dashboard for the user. This project was built using three different backend frameworks.</p>
-              <p class="modal-text tech">HTML, CSS, JavaScript, React, Node.Js, SQL & Sequelize</p>
-              <div class="modal-info">
-                <button class="deployment-button"><a href="https://nicola-just-tech-news.herokuapp.com/">View Website</a></button>
-                <a href="https://github.com/nicolalenee/just-tech-news" class="repo-link">View Repository</a>
+            <div class="modal-body">
+              <img src="/assets/images/just-tech-news.png" alt="Tech Blog"/>
+              <div class="modal-description">
+                <p class="modal-text tech text-white">Node.Js & Express | Python & Flask | Java & Spring </p>
+
+
+
+                <p class="modal-text">
+                  This nostalgic discussion board allows users to post links to articles about the latest technological advancements. Users can login and logout as well as comment and upvote posts. Editing and deleting posts is made easy with a personal dashboard for the user. This project was built using three different backend frameworks.</p>
+
+                  <p>
+                    <a href="https://github.com/nicolalenee/just-tech-news" class="repo-link"> Node Repository</a>
+                    |
+                    <a href="https://nicola-just-tech-news.herokuapp.com/" class="repo-link">Deployment</a>
+                 </p>
+
+                  <p>
+                    <a href="https://github.com/nicolalenee/python-newsfeed" class="repo-link">Python Repository</a>
+                    |
+                    <a href="https://technews-py.herokuapp.com/" class="repo-link">Deployment</a>   
+                  </p>
+                  
+                  <p>
+                    <a href="https://github.com/nicolalenee/tech-news-java-api" class="repo-link">Java Repository</a>
+                    |
+                    <a href="http://cc-java-api-nicola.herokuapp.com/" class="repo-link">Deployment</a>
+                  </p>
+                
               </div>
-
-              <p class="modal-text tech">HTML, CSS, JavaScript, Python, Jinja, Flask, SQL & SQLAlchemy</p>
-              <div class="modal-info">
-                <button class="deployment-button"><a href="https://technews-py.herokuapp.com/">View Website</a></button>
-                <a href="https://github.com/nicolalenee/python-newsfeed" class="repo-link">View Repository</a>
-              </div>
-
-              <p class="modal-text tech">HTML, CSS, JavaScript, Java, Thymeleaf, Spring Boot, SQL & Spring App JRA
             </div>
-            <div class="modal-info">
-              <button class="deployment-button"><a href="http://cc-java-api-nicola.herokuapp.com/">View Website</a></button>
-              <a href="https://github.com/nicolalenee/tech-news-java-api" class="repo-link">View Repository</a>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger text-white"><a href="https://nicola-just-tech-news.herokuapp.com/" class="text-white text-decoration-none">Visit Website</a></button>
             </div>
-
           </div>
         </div>
       </div>
       <!--end of modal #5-->
 
-      <!-- modal  6 -->
-      <div class="modal-content" id="six">
-        <span class="close">&times;</span>
-        <div class="modal-body">
-          <div class="modal-left">
-        
-            <img src="./assets/images/deep-thoughts.png" alt="Deep Thoughts" class="modal-image">
-          </div>
-          <div class="modal-right">
+      <!--modal  #6 -->
+      <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
             <div class="modal-header">
-              <h3 class="title">Deep Thoughts</h3>
+              <h5 class="modal-title" id="staticBackdropLabel">Deep Thoughts</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-description">
-              <p class="modal-text">
-                This social media application allows users to post their deeper, most innermost thoughts...publically. With a sleek interface, users are invited to post their thoughts as well as react to other users' thoughts. Once logged in, users can view profiles, edit posts, and add friends to their friends list! This app strives to create connection between users. </p>
-              <p class="modal-text tech">HTML, CSS, Node.Js, Express.Js, MongoDB & mongoose</p>
-              <div class="modal-info">
-                <button class="deployment-button"><a href="https://deep-thoughts-nm.herokuapp.com/">View Website</a></button>
-                <a href="https://github.com/nicolalenee/deep-thoughts" class="repo-link">View Repository</a>
+            <div class="modal-body">
+              <img src="/assets/images/deep-thoughts.png" alt="Deep Thoughts"/>
+              <div class="modal-description">
+                <p class="modal-text tech text-white">HTML, CSS, JavaScript, REST API, Express.js, Node.Js</p>
+
+                <p class="modal-text">
+                  A social media website that allows users to blog their personal thoughts... publically. Users can add friends, react to posts, and view user profiles after logging in! </p>
+              
+                
               </div>
+              <div class="modal-info">
+                <a href="https://github.com/nicolalenee/deep-thoughts" class="repo-link">Repository</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger text-white"><a href="https://deep-thoughts-nm.herokuapp.com/" class="text-white text-decoration-none">Visit Website</a></button>
             </div>
           </div>
         </div>
       </div>
-      <!--end of modal #6-->
+      <!--end of modal 6-->  
 
 
       </div>
     </section>
     
   </main>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
+
 
   <script src="./assets/js/modal.js"></script>
 </body>

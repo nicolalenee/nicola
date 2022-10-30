@@ -190,60 +190,12 @@ main {
   color: white;
   transition: background-color .2s ease-in;
 }
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 67;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-  font-family: 'Nanum Coding Gothic', monospace;
-}
-.modal-content {
-  background-color: rgba(97, 97, 97, 0.9);
-  margin: 15% auto;
-  padding: 30px;
-  border: 1px solid #888;
-  width: 80%;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-}
-.title {
-  font-size: 45px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: 0 0 3px red;
-}
-.modal-body {
-  display: flex;
-  justify-content: space-between;
-}
+
 .modal-image {
   max-width: 400px;
 }
 .modal-image img {
   width: 100%;
-}
-.modal-left {
-  margin-right: 10px;
-  width: 65%;
-}
-.modal-right {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  align-content: center;
-}
-.modal-text {
-  text-align: left;
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  color: white;
 }
 .modal-info {
   display: flex;
@@ -254,6 +206,7 @@ main {
 .tech { 
   background-color: var(--red);
   text-align: center;
+  font-size: 1.2rem;
 }
 .deployment-button {
   height: 50px;
@@ -272,13 +225,12 @@ main {
 }
 .repo-link {
   font-size: 1.33rem;
-  color: white;
+  color: red;
   font-weight: bold;
   text-decoration: none;
-  text-shadow: 0 0 3px red;
 }
 .repo-link:hover {
-  color: white;
+  color: red;
 }
 .close {
   color: white;
