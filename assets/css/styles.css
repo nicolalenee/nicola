@@ -128,8 +128,7 @@ main {
   width: 80%;
   padding: 20px;
   margin-left: 10px;
-  border: 1px solid var(--light);
-  border-radius: 5px;
+  
 }
 
 .about-right p {
@@ -186,7 +185,6 @@ main {
   margin: 20px;
   text-align: center;
   font-size: 21px;
-  border: 1px solid var(--light);
   padding: 10px;
   border-radius: 5px;
 }
@@ -255,11 +253,12 @@ main {
 .repo-link:hover {
   color: var(--purple);
 }
-.close {
+.close{
   color: white;
   font-size: 50px;
   font-weight: bold;
   margin-right: 15px;
+  background-color: var(--light)!important;
 }
 .close:hover,
 .close:focus {
