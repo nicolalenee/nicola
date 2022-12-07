@@ -112,27 +112,28 @@ main {
 .about-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 80%;
+  align-items: start;
+  
 }
 .about-left {
   margin: 15px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
   border: 1px solid var(--light);
 }
 .avatar {
   border-radius: 50%;
+  width: 90px;
 }
 .about-right {
-  width: 80%;
+  width: 100%;
   padding: 20px;
   margin-left: 10px;
   
 }
 
 .about-right p {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 300;
   color: var(--grey);
 }
