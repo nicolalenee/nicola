@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 :root {
@@ -10,25 +10,30 @@
   --grey: #5d5d6e;
   --light: rgb(174, 174, 174);
 }
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   padding-top: 65px;
   margin-bottom: 35px;
 }
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 header {
   position: fixed;
-  left:0;
-  right:0;
-  top:0;
+  left: 0;
+  right: 0;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width:100%;
+  width: 100%;
   z-index: 999;
   padding-top: 10px;
   background-color: rgba(255, 255, 255, 0.95);
@@ -41,7 +46,7 @@ header {
 .logo-text {
   font-size: 35px;
   color: var(--light);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 header ul {
@@ -61,11 +66,11 @@ nav a {
 }
 nav a:hover {
   color: var(--purple);
-  transition: color .2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 .icon-wrapper {
-  width:50px;
+  width: 50px;
 }
 main {
   display: flex;
@@ -73,7 +78,6 @@ main {
   margin: 40px;
   justify-content: center;
   align-items: center;
- 
 }
 .intro {
   line-height: 1.8;
@@ -113,7 +117,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  
 }
 .about-left {
   margin: 15px;
@@ -129,7 +132,6 @@ main {
   width: 100%;
   padding: 20px;
   margin-left: 10px;
-  
 }
 
 .about-right p {
@@ -144,7 +146,7 @@ main {
 }
 .about-right a:hover {
   color: var(--grey);
-  transition: color .2s ease-in;
+  transition: color 0.2s ease-in;
 }
 .currently-reading {
   padding: 5px;
@@ -192,7 +194,7 @@ main {
 .card-body {
   display: flex;
   direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 .card-heading {
   border-bottom: none;
@@ -202,12 +204,12 @@ main {
 }
 .modal-button {
   text-decoration: none;
-  color: var(--purple)
+  color: var(--purple);
 }
 .modal-button:hover {
   background-color: var(--grey);
   color: white;
-  transition: background-color .2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .modal-image {
@@ -225,7 +227,7 @@ main {
 .modal-text {
   font-size: 20px;
 }
-.tech { 
+.tech {
   background-color: var(--purple);
   text-align: center;
   font-size: 1.2rem;
@@ -242,8 +244,7 @@ main {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  
+  font-family: "Roboto", sans-serif;
 }
 .repo-link {
   font-size: 1.33rem;
@@ -254,12 +255,12 @@ main {
 .repo-link:hover {
   color: var(--purple);
 }
-.close{
+.close {
   color: white;
   font-size: 50px;
   font-weight: bold;
   margin-right: 15px;
-  background-color: var(--light)!important;
+  background-color: var(--light) !important;
 }
 .close:hover,
 .close:focus {
